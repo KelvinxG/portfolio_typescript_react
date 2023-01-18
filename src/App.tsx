@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Welcome from './components/header/welcome';
+import Rimes from './components/works/rimes';
+import Project_1 from './components/works/project_1';
+import Project_2 from './components/works/project_2';
+import Contact from './components/contact';
+import Myskills from './components/skills';
+import Footer from './components/footer';
+import GALLERY from './components/gallery/my_gallery';
+
+import MY_TIMELINE from './components/timeline/timelime';
+import MYRESUME from './components/resume_cv/resume_cv';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Welcome/>
+      <Myskills/>
+      <MY_TIMELINE/>
+       <MYRESUME/>
+      {/* <GALLERY/>    */}
+      <Footer/>
     </div>
   );
 }
